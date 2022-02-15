@@ -1,0 +1,23 @@
+<h1 class="MovieCategoryTitle">Маин Паге</h1>
+
+{{!-- <div class="btnWrapper">
+<button type="button" id="btnUpcomingFetch" class="btn btn-outline-success">Скоро в кино</button> <br>
+<button type="button" id="btnTopRatedFetch" class="btn btn-outline-primary">Лучшие фильмы</button> <br>
+<button type="button" id="btnPopularFetch" class="btn btn-outline-warning">Популярные фильмы</button> <br>
+<button type="button" id="btnNowPlayingFetch" class="btn btn-outline-danger">Сегодня в кино</button> <br> <br>
+</div> --}}
+
+<form name="formFetch" method="POST" action="/">
+
+  <div class="form-group">
+    <label for="exampleInputEmail1"></label>
+    <input type="text" class="form-control" name="text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите запрос">
+  </div>
+
+  <br> <button type="submit" id="searchBtn" class="btn btn-primary">Submit</button>
+
+</form>
+
+<div class="movieWrapper"></div>
+
+<script defer src="/js/index.js"></script>
