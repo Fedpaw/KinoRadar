@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const hbs = require('hbs');
 
 const app = express();
 
@@ -10,6 +11,7 @@ const movies = require('./routes/movies');
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
+hbs.registerPartials(path.join(process.env.PWD, 'views/partials'))
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));

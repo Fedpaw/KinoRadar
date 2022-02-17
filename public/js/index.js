@@ -20,7 +20,7 @@ function inserter(data) {
   </div>`;
 }
 
-formFetch.addEventListener('submit', async (e) => {
+formFetch?.addEventListener('submit', async (e) => {
   e.preventDefault();
   const formData = Object.fromEntries(new FormData(e.target));
   const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=99c1cf8690b5f1552c3e4b21f140af15&language=ru-RU&query=${formData.text}&page=1&include_adult=false`);
@@ -30,7 +30,6 @@ formFetch.addEventListener('submit', async (e) => {
   for (el of data) {
     movieWrapper.insertAdjacentHTML('afterbegin', inserter(el));
   }
-
 });
 
 btnUpcoming.addEventListener('click', async (e) => {

@@ -17,6 +17,8 @@ body {
 .MovieCategoryTitle {
   display: flex;
   justify-content: center;
+  color: white;
+  background-color: #212529;
 }
 
 #searchBtn {
@@ -29,4 +31,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.form-control {
+  width: 660px;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }

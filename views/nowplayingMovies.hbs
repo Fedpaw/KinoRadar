@@ -1,9 +1,10 @@
+ {{> navbar}}
 <h1 class="MovieCategoryTitle">Сегодня в кино</h1>
 
 <div class="row">
   {{#each nowplayingmovies}}
-  <div class="card col-3" >
-  <img class="card-img-top" src="{{this.poster}}" alt="Card image cap">
+  <div class="card col-3">
+    <img class="card-img-top" src="{{this.poster}}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{this.title}}</h5>
       <h6 class="card-title">{{this.original_title}}</h6>

@@ -1,16 +1,17 @@
+ {{> navbar}}
 <h1 class="MovieCategoryTitle">Скоро в кино</h1>
 
 <div class="row">
   {{#each upcomingmovies}}
-  <div class="card col-3" >
-  <img class="card-img-top" src="{{this.poster}}" alt="Card image cap">
-  <div class="card-body">
-    <h4 class="card-title">{{this.title}}</h4>
-    <h6 class="card-title">{{this.original_title}}</h6>
-    <p class="card-text">Дата выхода - {{this.release_date}}</p>
-    <p class="card-text">Описание - {{this.overview}}</p>
-    <p class="card-text">Рейтинг фильма - {{this.vote_average}}</p>
+  <div class="card col-3">
+    <img class="card-img-top" src="{{this.poster}}" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">{{this.title}}</h4>
+      <h6 class="card-title">{{this.original_title}}</h6>
+      <p class="card-text">Дата выхода - {{this.release_date}}</p>
+      <p class="card-text">Описание - {{this.overview}}</p>
+      <p class="card-text">Рейтинг фильма - {{this.vote_average}}</p>
+    </div>
   </div>
-</div>
   {{/each}}
 </div>
