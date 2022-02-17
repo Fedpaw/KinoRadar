@@ -12,7 +12,7 @@ Cоздать базу данных в PostgreSQL
   CREATE DATABASE yourNameDB OWNER testUser
   GRANT ALL PRIVILEGES ON DATABASE yourNameDB TO testUser
 ```
-В корневой папке
+В корневой папке cоздать файл .env и прописать данные БД из файла env-simple
 
 ```npm
   npm i 
