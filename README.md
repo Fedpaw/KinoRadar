@@ -12,6 +12,8 @@ Cоздать базу данных в PostgreSQL
   CREATE DATABASE yourNameDB OWNER testUser
   GRANT ALL PRIVILEGES ON DATABASE yourNameDB TO testUser
 ```
+В корневой папке
+
 ```npm
   npm i 
   npm start
