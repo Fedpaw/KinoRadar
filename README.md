@@ -1,4 +1,4 @@
 # KinoRadar
 Приложение для поиска фильмов по различным категориям и запросам.
 
-<img src="https://i.imgur.com/9ddC26c.gif" />
+![Alt Text](https://i.imgur.com/zYljNYD.gif)
